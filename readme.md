@@ -27,6 +27,7 @@ There are many text editors available that can write code for Node.js:
 * Git support
 * Terminal
 * Built on Node.js
+
 *For the purposes of this walkthrough we'll be utilizing VSCode*
 
 ## Install VSCode 
@@ -37,11 +38,18 @@ There are many text editors available that can write code for Node.js:
  ``` ctrl + shift + p ```
  4. Type 'Select Default Shell', select Git Bash
 
-## Tryout some commands
+## Setup a SSH key with GitHub 
 1. Toggle your terminal with ctrl + ` 
-2. Navigate to your desktop and creat a folder called test
-```$ mkdir test```
-
-cd test
-touch 
+2. Navigate to your desktop and create a folder called test `$ mkdir test`
+3. Inside /test initialize Git `$ git init`
+4. /test create a file `$ touch index.js`
+5. Open the file in VSCode `$ code index.js`
+6. Add a `console.log('Hello World!')` line and save
+7. Git add the file and write a commit message
+```
+$ git add -A
+$ git commit -m 'Add hello world'
+```
+8. Go to <https://github.com/>
+### Creating a SSH Key 
 
