@@ -34,9 +34,9 @@ There are many text editors available that can write code for Node.js:
  1. Go to <https://code.visualstudio.com> download the latest version.
  2. Follow the the install prompts, clicking next on all default options.
  ### Select Git BASH as your default terminal 
- 3. Open the Command Pallet
+ 1. Open the Command Pallet
  ``` ctrl + shift + p ```
- 4. Type 'Select Default Shell', select Git Bash
+ 2. Type 'Select Default Shell', select Git Bash
 
 ## Create a new SSH Key
 1. Toggle your terminal with `ctrl + \`` 
