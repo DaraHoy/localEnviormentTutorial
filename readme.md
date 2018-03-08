@@ -35,27 +35,35 @@ There are many text editors available that can write code for Node.js:
  2. Follow the the install prompts, clicking next on all default options.
  ### Select Git BASH as your default terminal 
  3. Open the Command Pallet
+
  ``` ctrl + shift + p ```
  4. Type 'Select Default Shell', select Git Bash
 
 ## Create a new SSH Key
 1. Toggle your terminal with `ctrl + \`` 
 2. Paste the text below, substituting in your GitHub email address.
+
 ``` ssh-keygen -t rsa -b 4096 -C "your_email@example.com" ```
 This creates a new ssh key, using the provided email as a label.
+
 ``` Generating public/private rsa key pair. ```
 3. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+
 ``` Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter] ```
 4. At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
+
 ```
 Enter passphrase (empty for no passphrase): [Type a passphrase]
 Enter same passphrase again: [Type passphrase again]
 ```
 5. Adding your SSH key to the ssh-agent, type 
+
 ```$ eval $(ssh-agent -s)```
 6. Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.
+
 ```$ ssh-add ~/.ssh/id_rsa```
 7. Copy the SSH key to your clipboard.
+
 ```$ clip < ~/.ssh/id_rsa.pub```
 8. Go to your <https://github.com/settings/profile> and click SSH and GPG keys
 9. Click Click New SSH Key or Add SSH Key.
@@ -64,10 +72,14 @@ Enter same passphrase again: [Type passphrase again]
 12. If prompted, confirm your GitHub password.
 
 ## Test a commit
-1. Navigate to your desktop inside VSCode terminal and create a folder called test `$ mkdir test`
-2. cd into /test and initialize Git `$ git init`
-3. Create a new file `$ touch index.js`
-4. Open the file in VSCode `$ code index.js`
+1. Navigate to your desktop inside VSCode terminal and create a folder called test
+ `$ mkdir test`
+2. cd into /test and initialize Git 
+`$ git init`
+3. Create a new file 
+`$ touch index.js`
+4. Open the file in VSCode 
+`$ code index.js`
 5. Add a `console.log('Hello World!')` line and save
 6. In the terminal add the file and write a commit message
 ```
@@ -79,8 +91,14 @@ $ git commit -m 'Add hello world'
 9. Enter `git push -u origin master`, you will use `git push` moving forward.
 
 ## Setup a simple HTTP server
-1. In your terminal confirm you have node `node -v`
-2. Create a new html file `$ touch index.html` then open using `$ code index.html`
+1. In your terminal confirm you have node
+ `node -v`
+2. Create a new html file
+
+ `$ touch index.html`
+  then open using
+  
+   `$ code index.html`
 3. Add the following code then save:
 ```
 <!DOCTYPE html>
@@ -96,10 +114,13 @@ $ git commit -m 'Add hello world'
 </body>
 </html>
 ```
-4. Install http-server `$ npm install http-server -g` 
+4. Install http-server 
+
+`$ npm install http-server -g` 
 
 *Normally you want to refrain from installing globally to avoid unintended conflicts*
 
 5. Run your loccal server with the -p indicating which port, we'll use the standard 8080 
+
 `$ http-server -p 8080`
 6. Go to `localhost:8080` in your browser.
