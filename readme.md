@@ -28,7 +28,7 @@ There are many text editors available that can write code for Node.js:
 * Terminal
 * Built on Node.js
 
-*For the purposes of this walkthrough we'll be utilizing VSCode*
+**For the purposes of this walkthrough we'll be utilizing VSCode*
 
 ## Install VSCode 
  1. Go to <https://code.visualstudio.com> download the latest version.
@@ -74,4 +74,6 @@ Enter same passphrase again: [Type passphrase again]
 $ git add -A
 $ git commit -m 'Add hello world'
 ```
-7. 
+7. Go to <https://github.com/new> and create a new repository called test, no need to add a gitignore or license. 
+8. Copy the git remote add origin line and paste into your terminal.
+9. Enter `git push -u origin master`
