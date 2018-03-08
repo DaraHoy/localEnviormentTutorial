@@ -76,4 +76,30 @@ $ git commit -m 'Add hello world'
 ```
 7. Go to <https://github.com/new> and create a new repository called test, no need to add a gitignore or license. 
 8. Copy the git remote add origin line and paste into your terminal.
-9. Enter `git push -u origin master`
+9. Enter `git push -u origin master`, you will use `git push` moving forward.
+
+## Setup a simple HTTP server
+1. In your terminal confirm you have node `node -v`
+2. Create a new html file `$ touch index.html` then open using `$ code index.html`
+3. Add the following code then save:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+</body>
+</html>
+```
+4. Install http-server `$ npm install http-server -g` 
+
+*Normally you want to refrain from installing globally to avoid unintended conflicts*
+
+5. Run your loccal server with the -p indicating which port, we'll use the standard 8080 
+`$ http-server -p 8080`
+6. Go to `localhost:8080` in your browser.
